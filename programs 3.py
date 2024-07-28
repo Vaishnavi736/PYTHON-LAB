@@ -85,3 +85,16 @@ if(sum==temp):
    print("palindrome")
 else:
    print("not a palindrome")
+# Armstrong
+n=int(input())
+temp=n
+sum=0
+while n>0:
+    rem=n%10
+    sum=sum+(rem**3) 
+    n=n//10
+if(sum==temp):
+   print("Armstrong")
+else:
+   print("not a Armstrong")
+     
