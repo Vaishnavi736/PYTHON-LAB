@@ -68,3 +68,16 @@ for i in range(n):
     ele=input("Enter the element")
     ele=l.append(ele)
 print(l2)
+#reverse without using reverse() 
+l=[]
+n=int(input("Enter the no of elements: "))
+for i in range(n):
+    ele=int(input("Enter elements: "))
+    l.append(ele)
+print(l) 
+i=1
+for i in range(n//2):
+    temp=l[i]
+    l[i]=l[n-i-1]
+    l[n-i-1]=temp
+print(l)  
