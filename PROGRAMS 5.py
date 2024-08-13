@@ -52,8 +52,8 @@ for i in range(n):
     ele=int(input("Enter elements: "))
     l.append(ele)
 print(l) 
-print(max(l))
-print(min(l))
+print(l.index(max(l)))
+print(l.index(min(l)))
 #
 l1=[]
 l2=[]
