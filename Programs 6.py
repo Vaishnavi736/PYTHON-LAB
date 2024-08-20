@@ -17,7 +17,7 @@ if s==rev:
      print("It's a String Palindrome")
 else:
      print("It's not a String Palindrome")   
-#length of palindrome
+#length of string
 s=input("enter string")
 count=0
 for i in s:
