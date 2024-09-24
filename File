@@ -1,0 +1,28 @@
+f=open("f6.txt",'w')
+f.write("Record")
+f=open("f6.txt",'a')
+f.write("Correction")
+f=open("f6.txt",'r')
+print(f.read())
+f.close()
+
+f=open('f6.txt','r')
+print(f.tell()) 
+content=f.read(10)
+pos=f.tell()
+print(pos)
+f.close()
+
+f=open('f6.txt','r')
+print("Initial pos ;",f.tell())
+f.seek(10)
+print("Position after seek: ",f.tell())
+print(f.read(5))                             #Namas
+print("Position after read: ",f.tell())
+
+f=open("class.bin",'wb')
+f.write(b'\x00\x01\x02')
+f=open("class.bin",'rb')
+print(f.read())
+
+
