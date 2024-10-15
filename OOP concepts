@@ -1,0 +1,34 @@
+#CREATING CLASS AND OBJECTS
+class Student:
+     branch="cse"
+     def details(self,regno,name):
+           self.rno=regno
+           self.n=name
+     def printing(self):
+           print(self.rno)
+           print(self.n)
+           print(Student.branch)
+s=Student()
+s.details(736,"vaish")                    
+s.printing()
+#CONSTRUCTORS
+class Test:
+      def __init__(self):
+             self.greet="All the best"
+      def wish(self):
+             print("I wish you",self.greet)
+obj=Test()
+obj.wish()            
+#DESTRUCTOR
+class cons:
+     def __init__(self):
+           self.greet="Good mrng"
+     def display(self):
+           print("A very ",self.greet)
+     def __del__(self):
+           print("obj destroyed")
+obj=cons()
+obj.display()
+print(obj)
+del obj           
+              
