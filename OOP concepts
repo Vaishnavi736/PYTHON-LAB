@@ -1,4 +1,5 @@
 #CREATING CLASS AND OBJECTS
+
 class Student:
      branch="cse"
      def details(self,regno,name):
@@ -11,15 +12,19 @@ class Student:
 s=Student()
 s.details(736,"vaish")                    
 s.printing()
+
 #CONSTRUCTORS
+
 class Test:
       def __init__(self):
              self.greet="All the best"
       def wish(self):
              print("I wish you",self.greet)
 obj=Test()
-obj.wish()            
+obj.wish() 
+
 #DESTRUCTOR
+
 class cons:
      def __init__(self):
            self.greet="Good mrng"
@@ -33,6 +38,7 @@ print(obj)
 del obj           
 
 #SINGLE INHERITANCE
+
 class Parent :
 	def Met1(self):
 		print("Method in Parent class")
@@ -41,8 +47,10 @@ class Child(Parent):
 		print("Method in Child Class")
 c = Child()
 c.Met1()
-c.Met2()				
+c.Met2()
+
 #MULTIPLE INHERITANCE
+
 class Parent1:
 	def Met1(self):
 		print("Method in Parent_1 class")
@@ -56,7 +64,9 @@ c = Child()
 c.Met1()
 c.Met2()	
 c.Met3()	
+
 #MULTI LEVEL INHERITANCE
+
 class Parent :
 	def Met1(self):
 		print("Method in Parent class")
@@ -69,8 +79,10 @@ class Child2(Child1):
 c = Child2()
 c.Met1()
 c.Met2()	
-c.Met3()			
+c.Met3()	
+
 #HYBRID INHERITANCE
+
 class Parent:
 	def Met1(self):
 		print("Method in Main Parent class")
@@ -89,7 +101,9 @@ c3.Met1()
 c3.Met2()
 c3.Met3()
 c3.Met4()
+
 #HIERARCHIAL INHERITANCE
+
 class Parent:
 	def Met1(self):
 		print("Method in Parent class")
