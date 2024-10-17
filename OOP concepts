@@ -14,7 +14,7 @@ s.details(736,"vaish")
 s.printing()
 
 #CONSTRUCTORS
-
+#DEFAULT CONSTRUCTOR
 class Test:
       def __init__(self):
              self.greet="All the best"
@@ -23,6 +23,21 @@ class Test:
 obj=Test()
 obj.wish() 
 
+#PARAMETARISED CONSTRUCTOR
+class add:
+    def __init__(self,f,s):
+        self.first=f
+        self.second=s
+    def display(self):
+        print("First Number= ",self.first)
+        print("Second Number= ",self.second)
+        print("sum = ",self.first+self.second)
+obj=add(7,9)
+obj.display()
+#OUTPUT
+First Number=  7
+Second Number=  9
+sum =  16
 #DESTRUCTOR
 
 class cons:
