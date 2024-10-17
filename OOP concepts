@@ -35,7 +35,11 @@ class cons:
 obj=cons()
 obj.display()
 print(obj)
-del obj           
+del obj       
+#OUTPUT
+A very  Good mrng
+<__main__.cons object at 0x7f06418df150>
+obj destroyed
 
 #SINGLE INHERITANCE
 
@@ -53,34 +57,41 @@ c.Met2()
 
 class Parent1:
 	def Met1(self):
-		print("Method in Parent_1 class")
+		print("Method in Parent1 class")
 class Parent2:
 	def Met2(self):
-		print("Method in Parent_2 Class")
+		print("Method in Parent2 Class")
 class Child(Parent1,Parent2):
 	def Met3(self):
 		print("Method in Child Class")
-c = Child()
-c.Met1()
-c.Met2()	
-c.Met3()	
+obj = Child()
+obj.Met1()
+obj.Met2()	
+obj.Met3()
+#OUTPUT
+Method in Parent1 class
+Method in Parent2 Class
+Method in Child Class
 
 #MULTI LEVEL INHERITANCE
 
 class Parent :
-	def Met1(self):
+	def Method1(self):
 		print("Method in Parent class")
 class Child1(Parent):
-	def Met2(self):
-		print("Method in Child_1 Class")
+	def Method2(self):
+		print("Method in Child1 Class")
 class Child2(Child1):
-	def Met3(self):
-		print("Method in Child_2 Class")
-c = Child2()
-c.Met1()
-c.Met2()	
-c.Met3()	
-
+	def Method3(self):
+		print("Method in Child2 Class")
+obj = Child2()
+obj.Method1()
+obj.Method2()	
+obj.Method3()	
+#OUTPUT
+Method in Parent class
+Method in Child1 Class
+Method in Child2 Class
 #HYBRID INHERITANCE
 
 class Parent:
