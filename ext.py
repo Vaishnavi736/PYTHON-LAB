@@ -60,7 +60,7 @@ print("avg: ",sum(l)/len(l))
 TEXT FILE
 3)
 def rfib(n):
-    if n<=0:
+    if n<=1:
         return n
     else:
         return (rfib(n-1)+rfib(n-2))
@@ -177,7 +177,7 @@ odd=[]
 for i in range(n):
      if(l[i]%2==0):
          even.append(l[i])
-    else:
+     else:
         odd.append(l[i])
 print(even)
 print(odd)
@@ -252,7 +252,7 @@ def secondlarge(l):
             i=seclarge
     print(seclarge)
 list=[4,6,3,2]
-print(seclarge(list))
+print(secondlarge(list))
 
 3)
 d=float(input("km"))
